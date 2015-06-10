@@ -9,9 +9,8 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-            'script.min.js': [
-              'main.js',
-              'bower_components/jquery/dist/jquery.min.js'
+            'assets/script.min.js': [
+              'assets/*.js'
             ]
         }
       }
@@ -19,12 +18,9 @@ module.exports = function(grunt) {
 
     cssmin: {
       build: {
-        options: {
-          banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-        },
         files: {
-          'styles.min.css': [
-            'main.css'
+          'assets/styles.min.css': [
+            'assets/*.css'
           ]
         }
       }
