@@ -1,0 +1,19 @@
+{
+  "name": "bigblackcode.github.io",
+  "version": "1.0.0",
+  "homepage": "http://bigblackcode.com",
+  "authors": [
+    "Alex Tselegidis <alextselegidis@gmail.com>",
+    "George Xatzhmixahl <george.xatzhmixahl@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
