@@ -28,6 +28,7 @@ h1 {
     color: #FFF; 
     pointer-events: none;
     line-height: 1.2;
+    -webkit-animation-duration: 10s; /* animate.css */
 } 
 
 h1 small {
