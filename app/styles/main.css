@@ -1,0 +1,27 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+img.tilt-effect {
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    position: absolute;
+    left: 81px;
+    top: 70px;
+    z-index: 99999;
+    font-family: Arial, Helvetica, serif;
+    font-weight: bolder;
+    font-size: 50px;
+    color: #FFF; 
+    pointer-events: none;
+    line-height: 1.8;
+} 

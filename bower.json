@@ -1,19 +1,12 @@
 {
-  "name": "bigblackcode.github.io",
-  "version": "1.0.0",
-  "homepage": "http://bigblackcode.com",
-  "authors": [
-    "Alex Tselegidis <alextselegidis@gmail.com>",
-    "George Xatzhmixahl <george.xatzhmixahl@gmail.com>"
-  ],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
+  "name": "bigblackcode-github-io",
+  "private": true,
   "dependencies": {
-    "jquery": "~2.1.4"
+    "jquery": "~1.11.1",
+    "html5shiv": "~3.7.2"
+  },
+  "devDependencies": {
+    "chai": "~3.0.0",
+    "mocha": "~2.2.5"
   }
 }
