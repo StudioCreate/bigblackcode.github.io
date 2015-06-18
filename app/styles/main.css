@@ -1,3 +1,5 @@
+/* GENERAL
+ --------------------------------------------------------------------------- */
 html, body {
     padding: 0;
     margin: 0;
@@ -13,9 +15,24 @@ section {
     height: 100vh;
 }
 
-img.tilt-effect {
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* INTRO SECTION
+ --------------------------------------------------------------------------- */
+
+#intro img.tilt-effect {
     display: block;
     margin: auto;
+}
+
+#intro .tilt__back, 
+#intro .tilt__front {
+  background-position: bottom;
 }
 
 h1 {
@@ -36,9 +53,3 @@ h1 small {
   color: rgba(255, 255, 255, 0.64);
 }
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}

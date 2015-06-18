@@ -1,1 +1,9 @@
-console.log('\'Allo \'Allo!');
+(function() {
+    
+    'use strict'; 
+
+    $(document).ready(function() {
+        $('.wrapper').fullpage();
+    });
+    
+})(); 

@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "jquery": "~1.11.1",
-    "html5shiv": "~3.7.2"
+    "html5shiv": "~3.7.2",
+    "fullpage": "~2.6.6"
   },
   "devDependencies": {
     "chai": "~3.0.0",
