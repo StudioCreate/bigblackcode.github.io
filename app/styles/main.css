@@ -1,8 +1,8 @@
 /* GENERAL
  --------------------------------------------------------------------------- */
 html, body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -11,8 +11,8 @@ body {
 }
 
 section {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .browsehappy {
@@ -22,12 +22,16 @@ section {
   padding: 0.2em 0;
 }
 
+#fp-nav ul li a span {
+  background: white;
+}
+
 /* INTRO SECTION
  --------------------------------------------------------------------------- */
 
 #intro img.tilt-effect {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 
 #intro .tilt__back, 
@@ -36,16 +40,16 @@ section {
 }
 
 h1 {
-    position: absolute;
-    left: 81px;
-    top: 70px;
-    z-index: 99999;
-    font-weight: bolder;
-    font-size: 4em;
-    color: #FFF; 
-    pointer-events: none;
-    line-height: 1.2;
-    -webkit-animation-duration: 10s; /* animate.css */
+  position: absolute;
+  left: 81px;
+  top: 70px;
+  z-index: 99999;
+  font-weight: bolder;
+  font-size: 4em;
+  color: #FFF; 
+  pointer-events: none;
+  line-height: 1.2;
+  -webkit-animation-duration: 10s; /* animate.css */
 } 
 
 h1 small {
@@ -53,3 +57,14 @@ h1 small {
   color: rgba(255, 255, 255, 0.64);
 }
 
+/* ABOUT SECTION
+ --------------------------------------------------------------------------- */
+#about {
+  background: #555;
+}
+
+/* MISC SECTION
+ --------------------------------------------------------------------------- */
+#misc {
+  background: #222;
+}

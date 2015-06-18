@@ -3,7 +3,11 @@
     'use strict'; 
 
     $(document).ready(function() {
-        $('.wrapper').fullpage();
+        $('.wrapper').fullpage({
+            navigation: true
+        });
+
+        $('section').css('height', ''); // * height fix
     });
-    
+
 })(); 
