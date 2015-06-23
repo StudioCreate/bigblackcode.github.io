@@ -1,5 +1,5 @@
 /* GENERAL
- --------------------------------------------------------------------------- */
+--------------------------------------------------------------------------- */
 html, body {
   padding: 0;
   margin: 0;
@@ -7,6 +7,7 @@ html, body {
 
 body {
   font-family: 'Amatic SC', cursive;
+  font-size: 14px;
   color: white;
 }
 
@@ -27,7 +28,7 @@ section {
 }
 
 /* INTRO SECTION
- --------------------------------------------------------------------------- */
+--------------------------------------------------------------------------- */
 
 #intro img.tilt-effect {
   display: block;
@@ -45,7 +46,7 @@ h1 {
   top: 70px;
   z-index: 99999;
   font-weight: bolder;
-  font-size: 4em;
+  font-size: 6em;
   color: #FFF; 
   pointer-events: none;
   line-height: 1.2;
@@ -58,13 +59,49 @@ h1 small {
 }
 
 /* ABOUT SECTION
- --------------------------------------------------------------------------- */
+--------------------------------------------------------------------------- */
 #about {
-  background: #555;
+  background: #41323D;
 }
 
-/* MISC SECTION
- --------------------------------------------------------------------------- */
-#misc {
-  background: #222;
+#about p {
+  max-width: 750px;
+  margin: auto;
+  text-align: center;
+  font-size: 3em;
+}
+
+#about img {
+  margin: 20px auto;
+  display: block;
+  max-width: 350px;
+}
+
+/* MIND ESCAPE SECTION
+--------------------------------------------------------------------------- */
+#mind-escape {
+  background: #BAFFFF;
+}
+
+#mind-escape p {
+  font-size: 3.5em;
+  margin: 0.7em;
+  color: #57CDCD;
+  font-weight: bold;
+}
+
+#mind-escape img {
+  float: right;
+  max-width: 350px;
+  margin-right: 2em;
+}
+
+/* COPYRIGHT SECTION
+--------------------------------------------------------------------------- */
+#copyright {
+  background: #323232;
+}
+
+#copyright small {
+  
 }
