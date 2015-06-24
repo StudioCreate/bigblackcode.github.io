@@ -16,15 +16,25 @@ section {
   height: 100vh;
 }
 
+section img {
+  display: block;
+  max-width: 350px;
+  margin: 20px auto;  
+}
+
+section p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 3em;
+  font-weight: bolder;
+  text-align: center;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
-}
-
-#fp-nav ul li a span {
-  background: white;
 }
 
 /* INTRO SECTION
@@ -60,44 +70,33 @@ h1 small {
 
 /* ABOUT SECTION
 --------------------------------------------------------------------------- */
+
 #about {
   background: #41323D;
 }
 
-#about p {
-  max-width: 750px;
-  margin: auto;
-  text-align: center;
-  font-size: 3em;
-}
-
-#about img {
-  margin: 20px auto;
-  display: block;
-  max-width: 350px;
-}
-
 /* MIND ESCAPE SECTION
 --------------------------------------------------------------------------- */
+
 #mind-escape {
   background: #BAFFFF;
 }
 
 #mind-escape p {
-  font-size: 3.5em;
-  margin: 0.7em;
   color: #57CDCD;
-  font-weight: bold;
 }
 
-#mind-escape img {
-  float: right;
-  max-width: 350px;
-  margin-right: 2em;
+#mind-escape a {
+  color: #294A4A;
+}
+
+#mind-escape a:hover {
+  
 }
 
 /* COPYRIGHT SECTION
 --------------------------------------------------------------------------- */
+
 #copyright {
   background: #323232;
 }
