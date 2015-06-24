@@ -40,6 +40,25 @@ section p {
 /* INTRO SECTION
 --------------------------------------------------------------------------- */
 
+#intro h1 {
+  position: absolute;
+  left: 1.5em;
+  top: 1em;
+  z-index: 99999;
+  font-weight: bolder;
+  font-size: 6em;
+  line-height: 1.2;
+  color: #FFF; 
+  pointer-events: none;
+  -webkit-animation-duration: 3s; 
+  animation-duration: 3s;
+} 
+
+#intro h1 small {
+  font-size: 0.6em;
+  color: rgba(255, 255, 255, 0.64);
+}
+
 #intro img.tilt-effect {
   display: block;
   margin: auto;
@@ -50,29 +69,16 @@ section p {
   background-position: bottom;
 }
 
-h1 {
-  position: absolute;
-  left: 81px;
-  top: 70px;
-  z-index: 99999;
-  font-weight: bolder;
-  font-size: 6em;
-  color: #FFF; 
-  pointer-events: none;
-  line-height: 1.2;
-  -webkit-animation-duration: 10s; /* animate.css */
-} 
-
-h1 small {
-  font-size: 0.6em;
-  color: rgba(255, 255, 255, 0.64);
-}
-
 /* ABOUT SECTION
 --------------------------------------------------------------------------- */
 
 #about {
-  background: #41323D;
+  background: #CC4452;
+}
+
+#about img, #about p {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 /* MIND ESCAPE SECTION
@@ -90,18 +96,16 @@ h1 small {
   color: #294A4A;
 }
 
-#mind-escape a:hover {
-  
-}
-
 /* COPYRIGHT SECTION
 --------------------------------------------------------------------------- */
 
 #copyright {
-  background: #323232;
+  background: #171717;
 }
 
 #copyright h2 {
   text-align: center;
   font-size: 4em;
+  -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+  animation-duration: 2s;
 }
