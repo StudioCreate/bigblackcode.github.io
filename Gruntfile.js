@@ -29,7 +29,7 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['<%= config.app %>/scripts/{,*/}*.js'],
-        tasks: ['jshint'],
+        //tasks: ['jshint'],
         options: {
           livereload: true
         }
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
       },
       styles: {
         files: ['<%= config.app %>/styles/{,*/}*.css'],
-        tasks: ['newer:copy:styles', 'autoprefixer']
+        // tasks: ['newer:copy:styles', 'autoprefixer']
       },
       livereload: {
         options: {
@@ -295,7 +295,7 @@ module.exports = function (grunt) {
       'clean:server',
       'wiredep',
       'concurrent:server',
-      //'autoprefixer',
+      'autoprefixer',
       'connect:livereload',
       'watch'
     ]);
