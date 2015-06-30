@@ -32,9 +32,9 @@ window.BigBlackCodeEffect = window.BigBlackCodeEffect || {};
                     logo.width * inst.scale, logo.height  * inst.scale);
                 
                 // Process Variables
-                inst.opacity -= 0.04;
+                inst.opacity -= 0.05;
                 inst.scale += 0.01; 
-                inst.rotate += inst.direction * 0.1;
+                inst.rotate += inst.direction * 0.3;
 
                 ctx.restore();
 
@@ -53,8 +53,8 @@ window.BigBlackCodeEffect = window.BigBlackCodeEffect || {};
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 
-        // 50% chance to create a new logo
-        if ((Math.random() * 100) > 50 && objects.length < 70) {
+        // 25% chance to create a new logo
+        if ((Math.random() * 100) > 25 && objects.length < 100) {
             objects.push(_createInstance()); 
         }  
 
@@ -70,7 +70,7 @@ window.BigBlackCodeEffect = window.BigBlackCodeEffect || {};
         // Animation Loop at 60 FPS
         setTimeout(function() {
             requestAnimationFrame(_animate);     
-        }, 1000 / 60); 
+        }, 1000 / 30); 
     };
 
 

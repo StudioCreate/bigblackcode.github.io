@@ -8,11 +8,12 @@
     $('.wrapper').fullpage({
         'onLeave': function(index, nextIndex) {
             if (index === 1 && nextIndex === 2 && !$('#about img').hasClass('animated')) {
+                $('#about').find('p, img').fadeIn(500).addClass('animated flip');
                 
                 setTimeout(function() {
-                    $('#about').find('p, img').fadeIn(500).addClass('animated flip');
                     BigBlackCodeEffect.begin();
-                }, 500);
+                    $('#about img').removeClass('flip').addClass('infinite pulse');
+                }, 2000);
 
             } else if (index === 2 && nextIndex === 3) {
 
