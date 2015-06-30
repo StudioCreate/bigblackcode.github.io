@@ -79,14 +79,14 @@ window.BigBlackCodeEffect = window.BigBlackCodeEffect || {};
 
         $canvas
         .attr({
-            'id': 'about-canvas',
+            'id': 'bigblackcode-canvas',
             'width': window.innerWidth,
             'height': window.innerHeight
         })
-        .prependTo('#about');
+        .prependTo('#bigblackcode');
 
         canvas = $canvas.get(0);
-        logo = $('#about img').get(0);
+        logo = $('#bigblackcode img').get(0);
         ctx = canvas.getContext('2d');
         objects = [];
 

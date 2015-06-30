@@ -69,14 +69,14 @@ section p {
   background-position: bottom;
 }
 
-/* ABOUT SECTION
+/* BIGBLACKCODE SECTION
 --------------------------------------------------------------------------- */
 
-#about {
+#bigblackcode {
   background: #CC4452;
 }
 
-#about img, #about p {
+#bigblackcode img, #bigblackcode p {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
@@ -84,15 +84,20 @@ section p {
 /* MIND ESCAPE SECTION
 --------------------------------------------------------------------------- */
 
-#mind-escape {
+#mindescape {
   background: #BAFFFF;
 }
 
-#mind-escape p {
+#mindescape img, #mindescape p {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+#mindescape p {
   color: #57CDCD;
 }
 
-#mind-escape a {
+#mindescape a {
   color: #294A4A;
 }
 
@@ -100,7 +105,7 @@ section p {
 --------------------------------------------------------------------------- */
 
 #copyright {
-  background: #171717;
+  background: #171717 url("../images/footer-background.png");
 }
 
 #copyright h2 {

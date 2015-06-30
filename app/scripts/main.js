@@ -2,26 +2,24 @@
 
     'use strict'; 
 
-    $('#about, #mind-escape').find('p, img').hide();
-    // $('#mind-escape').find('p, img').hide();
+    $('#bigblackcode, #mindescape').find('p, img').hide();
 
     $('.wrapper').fullpage({
         'onLeave': function(index, nextIndex) {
-            if (index === 1 && nextIndex === 2 && !$('#about img').hasClass('animated')) {
-                $('#about').find('p, img').fadeIn(500).addClass('animated flip');
+            if (index === 1 && nextIndex === 2 && !$('#bigblackcode img').hasClass('animated')) {
+                $('#bigblackcode').find('p, img').fadeIn(500).addClass('animated flip');
                 
                 setTimeout(function() {
                     BigBlackCodeEffect.begin();
-                    $('#about img').removeClass('flip').addClass('infinite pulse');
+                    $('#bigblackcode img').removeClass('flip').addClass('infinite pulse');
                 }, 2000);
 
-            } else if (index === 2 && nextIndex === 3) {
-
+            } else if (index === 2 && nextIndex === 3 && !$('#mindescape img').hasClass('animated')) {
+                $('#mindescape').find('p, img').fadeIn(500).addClass('animated flip');
                 setTimeout(function() {
-                    $('#mind-escape').find('p, img').fadeIn(500).addClass('animated flip');
                     MindEscapeEffect.begin();
-                }, 500);
-                
+                    $('#mindescape img').removeClass('flip').addClass('infinite pulse');
+                }, 2000);
             }
         }
     });
