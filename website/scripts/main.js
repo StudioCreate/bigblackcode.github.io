@@ -10,14 +10,14 @@
                 $('#bigblackcode').find('p, img').fadeIn(500).addClass('animated flip');
                 
                 setTimeout(function() {
-                    BigBlackCodeEffect.begin();
+                    window.BigBlackCodeEffect.begin();
                     $('#bigblackcode img').removeClass('flip').addClass('infinite pulse');
                 }, 2000);
 
             } else if (index === 2 && nextIndex === 3 && !$('#mindescape img').hasClass('animated')) {
                 $('#mindescape').find('p, img').fadeIn(500).addClass('animated flip');
                 setTimeout(function() {
-                    MindEscapeEffect.begin();
+                    window.MindEscapeEffect.begin();
                     $('#mindescape img').removeClass('flip').addClass('infinite pulse');
                 }, 2000);
             }

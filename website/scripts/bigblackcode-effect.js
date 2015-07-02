@@ -3,6 +3,8 @@ window.BigBlackCodeEffect = window.BigBlackCodeEffect || {};
 
 (function(exports) {
 
+    'use strict';
+
     var canvas,
     ctx, 
     logo,
@@ -58,13 +60,14 @@ window.BigBlackCodeEffect = window.BigBlackCodeEffect || {};
             objects.push(_createInstance()); 
         }  
 
-        objects.forEach(function(obj, index) {
+        objects.forEach(function(obj) {
             obj.draw();
         });
 
         objects.forEach(function(obj, index) {
-           if (obj.destroy())
+           if (obj.destroy()) {
                objects.splice(index, 1);
+           }
        });
 
         // Animation Loop at 60 FPS
@@ -75,7 +78,7 @@ window.BigBlackCodeEffect = window.BigBlackCodeEffect || {};
 
 
     exports.begin = function() {
-        var $canvas = $('<canvas/>')
+        var $canvas = $('<canvas/>');
 
         $canvas
         .attr({

@@ -4,6 +4,7 @@ window.MindEscapeEffect = window.MindEscapeEffect || {};
 
 
 (function(exports) {
+    'use strict';
 
     var canvas,
         ctx,
@@ -44,13 +45,14 @@ window.MindEscapeEffect = window.MindEscapeEffect || {};
             objects.push(_createInstance()); 
         }  
 
-        objects.forEach(function(obj, index) {
+        objects.forEach(function(obj) {
             obj.draw();
         });
 
         objects.forEach(function(obj, index) {
-           if (obj.destroy())
+           if (obj.destroy()) {
                objects.splice(index, 1);
+           }
        });
 
         // Animation Loop at 60 FPS
@@ -60,7 +62,7 @@ window.MindEscapeEffect = window.MindEscapeEffect || {};
     };
 
     exports.begin = function() {
-        var $canvas = $('<canvas/>')
+        var $canvas = $('<canvas/>');
 
         $canvas
         .attr({
