@@ -16,7 +16,13 @@ module.exports = function(grunt) {
         },
 
         clean: {
-            build: [ 'dist' ]
+            build: [ 'dist' ],
+            postbuild: [
+                'dist/scripts/**.js', 
+                '!dist/scripts/*.min.*',
+                'dist/styles/**.css',
+                '!dist/styles/*.min.*',
+            ]
         },
 
         copy: {
@@ -68,6 +74,7 @@ module.exports = function(grunt) {
         'cssmin:generated',
         'uglify:generated',
         'filerev',
-        'usemin'
+        'usemin',
+        'clean:postbuild'
     ]);
 };
