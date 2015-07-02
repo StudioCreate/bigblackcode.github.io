@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "~1.11.1",
     "html5shiv": "~3.7.2",
-    "fullpage": "~2.6.6"
+    "fullpage": "~2.6.6",
+    "animate.css": "~3.3.0"
   }
 }
