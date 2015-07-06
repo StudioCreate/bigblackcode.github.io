@@ -105,12 +105,12 @@ section p {
 --------------------------------------------------------------------------- */
 
 #copyright {
-  background: #171717 url("../images/footer-background.png");
+  background: #171717 url("../images/footer-background.jpg");
 }
 
 #copyright h2 {
   text-align: center;
-  font-size: 4em;
+  font-size: 6em;
   -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
   animation-duration: 2s;
 }
